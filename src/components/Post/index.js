@@ -3,32 +3,30 @@ import React from 'react';
 import style2 from './style2';
 import {imageAddress} from '../../../assets/images/imageaddress/ImageAddress';
 
-const Post = () => {
+const Post = ({post}) => {
   return (
     <View style={style2.container}>
       {/* image */}
-      <Image style={style2.image} source={{uri: imageAddress}} />
+      <Image style={style2.image} source={{uri: post.image}} />
 
       {/* bed abd bedroom */}
-      <Text style={style2.bedrooms}>1 bed 1 bedroom</Text>
+      <Text style={style2.bedrooms}>{post.bed} bed {post.bedroom} bedroom</Text>
 
       {/* description */}
       <Text style={style2.description} numberOfLines={2}>
-        The definition of a description is a statement that gives details about
-        someone or something. An example of description is a story about the
-        places visited on a family trip. noun. 15.
+        {post.description}
       </Text>
 
       {/* old and new price */}
       <Text style={style2.prices}>
-      <Text style={style2.oldPrice}>$36 </Text>
-      <Text style={style2.newPrice}> $30</Text>
+      <Text style={style2.oldPrice}>${post.oldPrice} </Text>
+      <Text style={style2.newPrice}> ${post.newPrice}</Text>
      / night
       </Text>
       
 
       {/* total price */}
-      <Text style={style2.totalPrice}>$250 total</Text>
+      <Text style={style2.totalPrice}>${post.totalPrice} total</Text>
     </View>
   );
 };

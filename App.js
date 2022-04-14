@@ -5,6 +5,7 @@ import HomeScreen from './src/components/Home';
 import Post from './src/components/Post';
 import Data from './assets/feed/feed'
 import SearchResult from './src/screens/searchResults';
+import DestinationSearch from './src/screens/Destinationsearch';
 
 
 const App = () => {
@@ -17,7 +18,8 @@ const App = () => {
       {/* <Icon name="home" size={30} color="#900" /> */}
       {/* <HomeScreen/> */}
       {/* <Post post={post}/> */}
-      {<SearchResult/>}
+      {/* {<SearchResult/>} */}
+      <DestinationSearch/>
       
     </View>
   )

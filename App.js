@@ -4,6 +4,7 @@ import React from 'react'
 import HomeScreen from './src/components/Home';
 import Post from './src/components/Post';
 import Data from './assets/feed/feed'
+import SearchResult from './src/screens/searchResults';
 
 
 const App = () => {
@@ -15,7 +16,8 @@ const App = () => {
      
       {/* <Icon name="home" size={30} color="#900" /> */}
       {/* <HomeScreen/> */}
-      <Post post={post}/>
+      {/* <Post post={post}/> */}
+      {<SearchResult/>}
       
     </View>
   )

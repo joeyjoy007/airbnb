@@ -23,7 +23,10 @@ const style4 = StyleSheet.create({
         marginRight:15,
 
     },
-    locationText:{}
+    locationText:{
+        fontWeight:"bold",
+        fontSize:15
+    }
 })
 
 export default style4

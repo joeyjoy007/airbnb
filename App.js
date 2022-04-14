@@ -6,6 +6,7 @@ import Post from './src/components/Post';
 import Data from './assets/feed/feed'
 import SearchResult from './src/screens/searchResults';
 import DestinationSearch from './src/screens/Destinationsearch';
+import GuestScreen from './src/screens/GuestScreen';
 
 
 const App = () => {
@@ -19,7 +20,8 @@ const App = () => {
       {/* <HomeScreen/> */}
       {/* <Post post={post}/> */}
       {/* {<SearchResult/>} */}
-      <DestinationSearch/>
+      {/* <DestinationSearch/> */}
+      <GuestScreen/>
       
     </View>
   )

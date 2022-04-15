@@ -46,7 +46,7 @@ const style1 = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
-    top:30,
+    top:50,
     position:'absolute',
     zIndex:99,
     marginHorizontal:10

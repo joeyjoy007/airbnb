@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 // import Icon from 'react-native-vector-icons/FontAwesome';
@@ -7,23 +8,16 @@ import Data from './assets/feed/feed'
 import SearchResult from './src/screens/searchResults';
 import DestinationSearch from './src/screens/Destinationsearch';
 import GuestScreen from './src/screens/GuestScreen';
+import Router from './src/navigations/Router/Router';
+
 
 
 const App = () => {
 
-  const post = Data[0]
+
 
   return (
-    <View>
-     
-      {/* <Icon name="home" size={30} color="#900" /> */}
-      {/* <HomeScreen/> */}
-      {/* <Post post={post}/> */}
-      {/* {<SearchResult/>} */}
-      {/* <DestinationSearch/> */}
-      <GuestScreen/>
-      
-    </View>
+<Router/>
   )
 }
 

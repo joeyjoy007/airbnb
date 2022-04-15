@@ -2,8 +2,9 @@ import {StyleSheet, Text, View, Image} from 'react-native';
 import React from 'react';
 import style2 from './style2';
 import {imageAddress} from '../../../assets/images/imageaddress/ImageAddress';
+import post from '../../../assets/feed/feed'
 
-const Post = ({post}) => {
+const Post = () => {
   return (
     <View style={style2.container}>
       {/* image */}

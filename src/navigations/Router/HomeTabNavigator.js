@@ -11,6 +11,7 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import DestinationSearch from '../../screens/Destinationsearch';
 import Post from '../../components/Post/index';
 import GuestScreen from '../../screens/GuestScreen';
+import ExploreTab from './ExploreTab';
 
 
 
@@ -22,10 +23,11 @@ const Tab = createBottomTabNavigator();
   return (
   
     <Tab.Navigator screenOptions={{
-      tabBarActiveTintColor:"#f15454"
+      tabBarActiveTintColor:"#f15454",
+      headerShown:false
     }}>
 
-      <Tab.Screen name="Explore" component={HomeScreen} options={{
+      <Tab.Screen name="Explore" component={ExploreTab} options={{
         tabBarIcon:({color})=>{
          return <AntDesign name="search1" size={23} color={color} />
         }

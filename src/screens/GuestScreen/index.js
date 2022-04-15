@@ -2,14 +2,15 @@ import {Pressable, StyleSheet, Text, View} from 'react-native';
 import React, { useState } from 'react';
 import style5 from './style5';
 
-const GuestScreen = () => {
+const GuestScreen = ({navigation}) => {
 
   const [adults, setAdults] = useState(0)
   const [childrens, setChildrens] = useState(0)
   const [infants, setInfants] = useState(0)
 
   return (
-    <View>
+    <View style={{height:"100%",justifyContent:"space-between"}}>
+      <View>
       <View
         style={style5.row}>
         <View>
@@ -74,6 +75,28 @@ const GuestScreen = () => {
             <Text style={{fontSize:20,color:"#474747"}}>+</Text>
           </Pressable>
         </View>
+      </View>
+      </View>
+
+      <View>
+        <Pressable style={{
+          marginBottom:20,
+          backgroundColor:"#f15454",
+          alignItems:"center",
+          justifyContent:"center",
+          height:50,
+          marginHorizontal:20,
+          borderRadius:10
+        }}
+        onPress={()=>navigation.navigate('HomeTabNavigator',{
+          screen:"Explore",
+          params:{
+            screen:"Post Screen"
+          }
+        })}
+        >
+          <Text style={{fontSize:20,color:"white",fontWeight:"bold"}}>Search</Text>
+        </Pressable>
       </View>
     </View>
   );

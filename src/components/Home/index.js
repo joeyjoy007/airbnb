@@ -2,17 +2,17 @@ import {ImageBackground, Pressable, StyleSheet, Text, TouchableOpacity, View} fr
 import React from 'react';
 import style1 from './style1';
 import wallPaper from '../../../assets/images/wallpaper.jpg';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
  
   return (
     <View>
       <Pressable
         style={style1.searchButton}
-        onPress={() => console.warn('explore button clicked')}>
-        <Icon name="search" size={25} color="#f15454" />
-        <Text style={style1.searchButtonText}>Where are you going ?</Text>
+        onPress={() =>navigation.navigate('Destination Search')}>
+        <AntDesign name="search1" size={25} color="#f15454" />
+        <Text style={style1.searchButtonText}> Where are you going ?</Text>
       </Pressable>
       
       <ImageBackground source={wallPaper} style={style1.image}>
